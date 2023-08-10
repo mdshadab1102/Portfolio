@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shadab</title>
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+	<header>
+		<img src="logo/logolightmode2.png" alt="" id="plogo">
+		<ul>
+			<li><a href="#" id="Home">Home</a></li>
+			<li><a href="page/work.html" >Work</a></li>
+			<li><a href="https://docs.google.com/document/d/1c0JvYtUB2jpHObM4rtYh3U2kNWcFPtLimJO2p2xs82g/edit?usp=sharing">Resume</a></li>
+			<li><a href="page/contact.html">Contact</a></li>
+			<li><img src="logo/sun.png" alt="" id="icon"></li>
+		</ul>
+	</header>
+	<div class="name">
+		<p>About </p>
+		<p>Md Shadab</p>
+	</div>
+	<div class="myprofile">
+		<div class="myprofilemyimg">
+			<img src="myimage/myimg1.png" alt="">
+		</div>
+		<div class="myprofileabout">
+			<div class="desination">
+				<!-- <h2>Fresher</h2> -->
+			</div>
+			<p>Seeking to leverage my skills in Python, Frontend Web Development and Data Structure & Algorithms, to gain expertise in multiple areas of software development and thereby contribute to the success of the organization.</p>
+			<p>Skills:</p>
+			<ul>
+				<li>Python</li>
+				<li>C / C++</li>
+				<li>Html / Css</li>
+				<li>Javascrypt / jQuery / Reactjs</li>
+				<li>Data Structures & Algorithms</li>
+				<li>OOPs concept</li>
+				<li>Microsoft Excel</li>
+			</ul>
+			<div class="myprofileaboutchild">
+				<a href="page/work.html">Projects</a>
+				<a href="https://docs.google.com/document/d/1c0JvYtUB2jpHObM4rtYh3U2kNWcFPtLimJO2p2xs82g/edit?usp=sharing">Resume</a>
+			</div>
+			<div class="sociallinks">
+				<ul>
+					<li><a href="https://github.com/mdshadab1102"><img src="logo/github.svg" alt=""></a></li>
+					<li><a href="https://www.linkedin.com/in/md-shadab-8300731b3/"><img src="logo/linkedin.svg" alt=""></a></li>
+					<li><a href="mailto:mdshadabharoon691@gmail.com"><img src="logo/gmail.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		let lightMode= localStorage.getItem('lightMode');
+		const icon = document.querySelector('#icon');
+		const enableLightMode=() =>{
+			document.body.classList.add('lightmode');
+			localStorage.setItem('lightMode','enabled');
+		}
+		const disableLightMode=() =>{
+			document.body.classList.remove('lightmode');
+			localStorage.setItem('lightMode',null);
+		}
+		if(lightMode === "enabled"){
+			enableLightMode();
+			icon.src="logo/moon.png";
+			plogo.src="logo/logolightmode.png"
+		}
+
+		icon.addEventListener("click", () =>{
+			lightMode= localStorage.getItem('lightMode');
+			if(lightMode !== "enabled"){
+				enableLightMode();
+				icon.src="logo/moon.png";
+				plogo.src="logo/logolightmode.png"
+			}
+			else{
+				disableLightMode();
+				icon.src="logo/sun.png";
+	    		plogo.src="logo/logolightmode2.png";
+			}
+		});
+	// icon.onclick = function(){
+	// 	document.body.classList.toggle("light-theme");
+	// 	if (document.body.classList.contains("light-theme")) {
+	// 		icon.src="logo/moon.png"
+	// 		plogo.src="logo/logolightmode2.png"
+	// 	}
+	// 	else{
+	// 		icon.src="logo/sun.png"
+	// 		plogo.src="logo/plogo2.png"
+	// 	}
+	// }
+	</script>
+</body>
+</html>

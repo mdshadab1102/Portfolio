@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="../style/index.css">
+</head>
+<body>
+	<header>
+		<img src="../logo/logolightmode2.png" alt="" id="plogo">
+		<ul>
+			<li><a href="../index.html" >Home</a></li>
+			<li><a href="work.html" >Work</a></li>
+			<li><a href="https://docs.google.com/document/d/1c0JvYtUB2jpHObM4rtYh3U2kNWcFPtLimJO2p2xs82g/edit?usp=sharing">Resume</a></li>
+			<li><a href="#" id="Home" >Contact</a></li>
+			<li><img src="../logo/sun.png" alt="" id="icon"></li>
+		</ul>
+	</header>
+	<div class="contactsociallinks">
+				<ul>
+					<li><a href="https://github.com/mdshadab1102"><img src="../logo/github.svg" alt=""></a></li>
+					<li><a href="https://www.linkedin.com/in/md-shadab-8300731b3/"><img src="../logo/linkedin.svg" alt=""></a></li>
+					<li><a href="mailto:mdshadabharoon691@gmail.com"><img src="../logo/gmail.svg" alt=""></a></li>
+				</ul>
+	</div>
+	<div class="contctnumber">
+		<p>Contact No: +91 6289690442</p> 
+	</div>
+	<div class="contactthanks">
+		<p>Thank you For Visiting</p>
+	</div>
+<script>
+	let lightMode= localStorage.getItem('lightMode');
+	const icon = document.querySelector('#icon');
+	const enableLightMode=() =>{
+		document.body.classList.add('lightmode');
+		localStorage.setItem('lightMode','enabled');
+	}
+	const disableLightMode=() =>{
+		document.body.classList.remove('lightmode');
+		localStorage.setItem('lightMode',null);
+	}
+	if(lightMode === "enabled"){
+		enableLightMode();
+		icon.src="../logo/moon.png";
+		plogo.src="../logo/logolightmode.png"
+	}
+
+	icon.addEventListener("click", () =>{
+		lightMode= localStorage.getItem('lightMode');
+		if(lightMode !== "enabled"){
+			enableLightMode();
+			icon.src="../logo/moon.png";
+			plogo.src="../logo/logolightmode.png"
+		}
+		else{
+			disableLightMode();
+			icon.src="../logo/sun.png";
+	    	plogo.src="../logo/logolightmode2.png";
+		}
+	});
+	// let darkmode= localStorage.getItem('darkmode');
+	
+	// var icon = document.getElementById('icon');
+	// var plogo= document.getElementById('plogo');
+	// icon.onclick = function(){
+	// 	document.body.classList.toggle("light-theme");
+	// 	if (document.body.classList.contains("light-theme")) {
+	// 		icon.src="../logo/moon.png"
+	// 		plogo.src="../logo/logolightmode2.png"
+	// 	}
+	// 	else{
+	// 		icon.src="../logo/sun.png"
+	// 		plogo.src="../logo/plogo2.png"
+	// 	}
+	// }
+</script>	
+</body>
+</html>
