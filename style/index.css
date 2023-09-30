@@ -200,11 +200,17 @@ header a:hover {
 .workcontainer {
   margin-bottom: 3rem;
 }
-.workcontainer p {
+.workcontainer h2{
   color: var(--color2);
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
+}
+.workcontainer p {
+  color: var(--color2);
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem 0;
 }
 .projectcard1 {
   margin-top: 1rem;
@@ -387,7 +393,7 @@ header a:hover {
 
 @media (max-width: 998px) {
   header img {
-    height: 7rem;
+    height: 6rem;
   }
   header a {
     font-size: 1.6rem;
@@ -420,9 +426,6 @@ header a:hover {
     width: 200px;
     color: var(--color2);
     margin-right: 0px;
-  }
-  #cglogo {
-    height: 55px;
   }
   .myprofileabout p:nth-child(2) {
     font-size: 0.7rem;
@@ -531,7 +534,7 @@ header a:hover {
 
 @media (max-width: 768px) {
   header img {
-    height: 7rem;
+    height: 6rem;
   }
   .desination {
     display: inline-flex;
@@ -541,8 +544,5 @@ header a:hover {
     font-size: 16px;
     color: var(--color2);
     margin-right: 5px;
-  }
-  #cglogo {
-    height: 0px;
   }
 }
