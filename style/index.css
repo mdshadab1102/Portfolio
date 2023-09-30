@@ -387,7 +387,7 @@ header a:hover {
 
 @media (max-width: 998px) {
   header img {
-    height: 10rem;
+    height: 7rem;
   }
   header a {
     font-size: 1.6rem;
@@ -420,9 +420,6 @@ header a:hover {
     width: 200px;
     color: var(--color2);
     margin-right: 0px;
-  }
-  .desination img {
-    height: 10px;
   }
   #cglogo {
     height: 55px;
@@ -534,7 +531,7 @@ header a:hover {
 
 @media (max-width: 768px) {
   header img {
-    height: 15rem;
+    height: 7rem;
   }
   .desination {
     display: inline-flex;
@@ -544,9 +541,6 @@ header a:hover {
     font-size: 16px;
     color: var(--color2);
     margin-right: 5px;
-  }
-  .desination img {
-    height: 10px;
   }
   #cglogo {
     height: 0px;
