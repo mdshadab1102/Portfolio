@@ -26,14 +26,14 @@ header {
   color: var(--color2);
 }
 header img {
-  height: 7rem;
+  height: 6rem;
   margin-left: 3rem; 
 }
-#plogo{
+/* #plogo{
   height: 6rem;
   width: 15rem;
   margin-left: 3rem;
-}
+} */
 header ul {
   list-style-type: none;
   display: flex;
@@ -126,7 +126,15 @@ header a:hover {
   margin-right: 5px;
 }
 .desination img {
+  width: 40px;
   height: 40px;
+  background-position: center center;
+  background-size: cover;
+}
+#prodigy{
+  font-size: 1rem;
+  color: skyblue;
+  margin-left: .5rem;
 }
 .myprofileabout p:nth-child(2) {
   font-size: 1.2rem;
