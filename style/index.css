@@ -402,7 +402,7 @@ header a:hover {
     margin-top: -3.2rem;
     justify-content: center;
   }
-  .myprofile img {
+  .myprofile .myprofilemyimg img {
     height: 31rem;
   }
   .myprofileabout {
