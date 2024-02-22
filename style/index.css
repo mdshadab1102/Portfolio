@@ -52,6 +52,7 @@ header a {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
   padding-bottom: 0.5rem;
+/*   border: 1px solid white; */
   transition: 1s;
   position: relative;
 }
@@ -396,7 +397,7 @@ header a:hover {
     height: 6rem;
   }
   header a {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
   }
   .myprofile {
     display: grid;
