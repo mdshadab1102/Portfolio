@@ -10,20 +10,20 @@ const disableLightMode=() =>{
 }
 if(lightMode === "enabled"){
 	enableLightMode();
-	icon.src="logo/moon.png";
-	plogo.src="logo/logolightmode.png"
+	icon.src="../logo/moon.png";
+	plogo.src="../logo/logolightmode.png"
 }
 
 icon.addEventListener("click", () =>{
         lightMode= localStorage.getItem('lightMode');
         if(lightMode !== "enabled"){
 	        enableLightMode();
-	        icon.src="logo/moon.png";
-	        plogo.src="logo/logolightmode.png"
+	        icon.src="../logo/moon.png";
+	        plogo.src="../logo/logolightmode.png"
         }
         else{
 	        disableLightMode();
-	        icon.src="logo/sun.png";
-	        plogo.src="logo/logolightmode2.png";
+	        icon.src="../logo/sun.png";
+	        plogo.src="../logo/logolightmode2.png";
         }
 });
