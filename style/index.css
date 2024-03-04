@@ -399,6 +399,9 @@ header a:hover {
   header a {
     font-size: 1.1rem;
   }
+  #Home {
+    border-bottom: none;
+  }
   .myprofile {
     display: grid;
     grid-template-columns: auto;
